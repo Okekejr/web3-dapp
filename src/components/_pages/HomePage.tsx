@@ -21,7 +21,7 @@ export const HomePage: FC<Props> = ({ data }) => {
   const list = Object.values(data);
 
   const Filter = list.filter((coin, i) => {
-    if (i <= 10) {
+    if (i <= 9) {
       return coin;
     }
     return false;

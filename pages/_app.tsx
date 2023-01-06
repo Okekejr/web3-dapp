@@ -21,6 +21,7 @@ import {
   sepolia,
 } from "wagmi/chains";
 import { publicProvider } from "wagmi/providers/public";
+import { Layout } from "../src/layout/Layout";
 import theme from "../src/theme";
 
 const { provider, webSocketProvider } = configureChains(
@@ -57,7 +58,9 @@ export default function App({ Component, pageProps }: AppProps) {
       <ColorModeScript initialColorMode={theme.config.initialColorMode} />
       <WagmiConfig client={client}>
         <SessionProvider session={pageProps.session} refetchInterval={0}>
-          <Component {...pageProps} />
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
         </SessionProvider>
       </WagmiConfig>
     </ChakraProvider>

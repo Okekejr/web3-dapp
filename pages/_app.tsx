@@ -1,13 +1,48 @@
 import { ChakraProvider, ColorModeScript } from "@chakra-ui/react";
+import { SessionProvider } from "next-auth/react";
 import type { AppProps } from "next/app";
 import { configureChains, WagmiConfig, createClient } from "wagmi";
-import { polygon, polygonMumbai, mainnet } from "wagmi/chains";
+import {
+  arbitrum,
+  arbitrumGoerli,
+  avalanche,
+  avalancheFuji,
+  bsc,
+  bscTestnet,
+  fantom,
+  fantomTestnet,
+  foundry,
+  goerli,
+  mainnet,
+  optimism,
+  optimismGoerli,
+  polygon,
+  polygonMumbai,
+  sepolia,
+} from "wagmi/chains";
 import { publicProvider } from "wagmi/providers/public";
 import { Layout } from "../src/components/layout/Layout";
 import theme from "../src/theme";
 
 const { provider, webSocketProvider } = configureChains(
-  [mainnet, polygon, polygonMumbai],
+  [
+    arbitrum,
+    arbitrumGoerli,
+    avalanche,
+    avalancheFuji,
+    bsc,
+    bscTestnet,
+    fantom,
+    fantomTestnet,
+    foundry,
+    goerli,
+    mainnet,
+    optimism,
+    optimismGoerli,
+    polygon,
+    polygonMumbai,
+    sepolia,
+  ],
   [publicProvider()]
 );
 
@@ -22,9 +57,11 @@ export default function App({ Component, pageProps }: AppProps) {
     <ChakraProvider theme={theme}>
       <ColorModeScript initialColorMode={theme.config.initialColorMode} />
       <WagmiConfig client={client}>
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
+        <SessionProvider session={pageProps.session} refetchInterval={0}>
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
+        </SessionProvider>
       </WagmiConfig>
     </ChakraProvider>
   );

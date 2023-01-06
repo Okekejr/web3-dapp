@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# web3-Dapp
 
-## Getting Started
+The web3 app was built with the intention of using the modern web3 technologies to interact with Metamask and return the ERC20 token balances in your wallet while giving an interactive and smooth UI.
+I used Moralis Web3 API. Moralis supports the most popular blockchains and their test networks. Check it out https://docs.moralis.io/web3-data-api
 
-First, run the development server:
+## Installation (for standard modern project) and run project
 
 ```bash
-npm run dev
-# or
-yarn dev
+edit the .env.local configurations
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```bash
+yarn add
+```
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```bash
+yarn next build
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+```bash
+yarn run dev
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## How to use?
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. On page load the app renders a table of Coins (10) from an API, this is the Home page.
+2. This table has a sorting feature which can let you sort on all columns (by ID, Coin name, Symbol and Value).
+3. On the wallet page, you get a screen that displays the Metamask logo and a connnect button,
+4. The connect button sends a request to Metamask and once approved by the user, takes you the Balance page,
+5. The balance page displays the Network you are on, the connect symbol, your current Account ID (formatted), a copy to clipboard feature and a logout button.
+6. Just right below will appear your list of ERC20 tokens, with their names, values and Symbol and if there aren't any available it will display a text that says you havev none.
 
-## Learn More
+## Requirements to run the project successfully using the Vercel link
 
-To learn more about Next.js, take a look at the following resources:
+1. Metmask web extension
+2. Some ERC20 token balances
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Demo
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+#### Live link
 
-## Deploy on Vercel
+```
+https://web3-dapp-dusky.vercel.app/
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Stack
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<img src="https://cdn.freebiesupply.com/logos/large/2x/react-1-logo-png-transparent.png" alt="react" width="40" height="40"> <img src='https://cdn.worldvectorlogo.com/logos/typescript.svg' alt='typescript' width='40' height='40'> <img src='https://pbs.twimg.com/profile_images/1244925541448286208/rzylUjaf_400x400.jpg' alt='chakra ui' width='40' height='40'> <img src='https://wagmi.sh/og.png' alt='wagmi' width='40' height='40'> <img src='https://wagmi.sh/og.png' alt='wagmi' width='40' height='40'>

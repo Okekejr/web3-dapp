@@ -45,4 +45,4 @@ https://web3-dapp-dusky.vercel.app/
 
 ## Stack
 
-<img src="https://cdn.freebiesupply.com/logos/large/2x/react-1-logo-png-transparent.png" alt="react" width="40" height="40"> <img src='https://cdn.worldvectorlogo.com/logos/typescript.svg' alt='typescript' width='40' height='40'> <img src='https://pbs.twimg.com/profile_images/1244925541448286208/rzylUjaf_400x400.jpg' alt='chakra ui' width='40' height='40'> <img src='https://wagmi.sh/og.png' alt='wagmi' width='40' height='40'> <img src='https://wagmi.sh/og.png' alt='wagmi' width='40' height='40'>
+<img src="https://cdn.freebiesupply.com/logos/large/2x/react-1-logo-png-transparent.png" alt="react" width="40" height="40"> <img src='https://cdn.worldvectorlogo.com/logos/typescript.svg' alt='typescript' width='40' height='40'> <img src='https://pbs.twimg.com/profile_images/1244925541448286208/rzylUjaf_400x400.jpg' alt='chakra ui' width='40' height='40'> <img src='https://wagmi.sh/og.png' alt='wagmi' width='40' height='40'> <img src='https://moralis.io/wp-content/uploads/2022/05/Moralis-Logo-LightBG-Large.png' alt='moralis' width='60' height='40'>

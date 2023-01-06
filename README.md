@@ -36,7 +36,17 @@ yarn run dev
 
 ## Demo
 
+Home Page: 
+<img width="1434" alt="Screenshot 2023-01-06 at 13 09 05" src="https://user-images.githubusercontent.com/85338878/211086405-53b1437f-c330-4d24-b2e4-9a150300cfd3.png">
 
+Wallet Page:
+<img width="1440" alt="Screenshot 2023-01-06 at 13 09 14" src="https://user-images.githubusercontent.com/85338878/211086471-9ff71823-bd30-4084-b547-999cf12b60ab.png">
+
+Connecting to Metamask:
+<img width="1440" alt="Screenshot 2023-01-06 at 13 09 37" src="https://user-images.githubusercontent.com/85338878/211086617-f47446b3-0fe4-4503-9943-a6fe5629ff1a.png">
+
+Balance Page:
+<img width="1437" alt="Screenshot 2023-01-06 at 13 09 54" src="https://user-images.githubusercontent.com/85338878/211086668-50ac0ed9-acc2-43a5-9bcd-bcb1331064fa.png">
 
 #### Live link
 

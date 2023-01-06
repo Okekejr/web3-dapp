@@ -1,13 +1,12 @@
 # web3-Dapp
 
-The web3 app was built with the intention of using the modern web3 technologies to interact with Metamask and return the ERC20 token balances in your wallet while giving an interactive and smooth UI.
+The web3 app was built with the intention of using the modern web3 technologies to interact with Metamask and return the ERC20 token balances in your wallet while giving an interactive and smooth UI. 
+Fully responsive and has Dark and Light Mode features.
 I used Moralis Web3 API. Moralis supports the most popular blockchains and their test networks. Check it out https://docs.moralis.io/web3-data-api
 
 ## Installation (for standard modern project) and run project
 
-```bash
-edit the .env.local configurations
-```
+- edit the .env.local configurations
 
 ```bash
 yarn add
@@ -37,6 +36,8 @@ yarn run dev
 
 ## Demo
 
+
+
 #### Live link
 
 ```
@@ -45,4 +46,4 @@ https://web3-dapp-dusky.vercel.app/
 
 ## Stack
 
-<img src="https://cdn.freebiesupply.com/logos/large/2x/react-1-logo-png-transparent.png" alt="react" width="40" height="40"> <img src='https://cdn.worldvectorlogo.com/logos/typescript.svg' alt='typescript' width='40' height='40'> <img src='https://pbs.twimg.com/profile_images/1244925541448286208/rzylUjaf_400x400.jpg' alt='chakra ui' width='40' height='40'> <img src='https://wagmi.sh/og.png' alt='wagmi' width='40' height='40'> <img src='https://moralis.io/wp-content/uploads/2022/05/Moralis-Logo-LightBG-Large.png' alt='moralis' width='60' height='40'>
+<img src="https://d2nir1j4sou8ez.cloudfront.net/wp-content/uploads/2021/12/nextjs-boilerplate-logo.png" alt="next.js" width="40" height="40"> <img src='https://cdn.worldvectorlogo.com/logos/typescript.svg' alt='typescript' width='40' height='40'> <img src='https://pbs.twimg.com/profile_images/1244925541448286208/rzylUjaf_400x400.jpg' alt='chakra ui' width='40' height='40'> <img src='https://wagmi.sh/og.png' alt='wagmi' width='40' height='40'> <img src='https://moralis.io/wp-content/uploads/2022/05/Moralis-Logo-LightBG-Large.png' alt='moralis' width='90' height='40'>

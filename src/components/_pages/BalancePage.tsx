@@ -9,6 +9,7 @@ import { IoMdCopy } from "react-icons/io";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { useState } from "react";
 import { ConnectIndicator } from "../ConnectIndicator/ConnectIndicator";
+import ERC20Balances from "../ERC20Balance/ERC20Balance";
 
 export const BalancePage: FC = () => {
   const { disconnectAsync } = useDisconnect();
@@ -82,6 +83,7 @@ export const BalancePage: FC = () => {
           {deleteSuccess && <Text>Copied!</Text>}
         </Flex>
       </Box>
+      {data && <ERC20Balances />}
     </Card>
   );
 };

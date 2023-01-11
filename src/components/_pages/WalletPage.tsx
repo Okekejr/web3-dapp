@@ -8,7 +8,7 @@ export const WalletPage: FC = () => {
     <Box
       display="flex"
       flexDir="column"
-      m={{ md: "5rem auto 5rem auto" }}
+      m="5rem auto 5rem auto"
       alignItems="center"
       w="fit-content"
     >
